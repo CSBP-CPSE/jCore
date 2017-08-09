@@ -1,0 +1,210 @@
+.ArrowContainer {
+    position: relative;
+    top		: 8px;
+	width	: 100%;
+	text-align : center;
+}
+
+.ArrowContainer .Arrow.Down {
+    border		: none;
+    background 	: url(../assets/arrowDown.png) no-repeat;
+	background-size: 100%;
+    width	: 30px;
+    height	: 16px;
+}
+
+/*** POPUP ***/
+.Modal.View,
+.Modal.Popup {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.Modal.View,
+.Popup {
+	z-index:5000;
+	background-color : rgba(20,30,40,0.65);
+}
+
+.Popup .Container {
+    position: absolute;
+	
+	top: 50%;
+    left: 50%;
+	
+	text-align:justify;
+    background-color: #fff;
+    border-radius: 6px;
+    border: solid rgba(255, 255, 255, 0.9) 1.5px;
+    box-shadow: -5px 5px 15px rgba(1, 1, 1, 0.5);
+}
+
+.Popup .Header {
+	position : absolute;
+    height: 30px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+	
+    border-bottom: solid thin silver;
+}
+
+.Popup .Body {    
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    overflow-y: auto;
+    padding: 8px;
+}
+
+.Popup .Footer {
+    position: absolute;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: solid thin silver;
+    text-align: center;
+}
+
+.Popup .Header .Title {
+    position: relative;
+    margin: 0px 0px 0px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.Popup .Header .Button.Close {
+	background: url(../assets/cross.png) no-repeat;
+    background-size: contain;
+    border: none;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.Popup .Header > *{
+	display : inline-block;
+}
+
+.Popup .Footer .Button {
+    position: relative;
+	top : 4px;
+	height: 22px;
+    font-size: 12px;
+}
+
+.Popup a {
+	color : #fff28a;
+}
+
+.Popup a:visited {
+	color : #ffdcd3
+}
+
+.Popup p {
+    font-size: small;
+    font-weight: normal;
+}
+
+.Popup.View h3 {
+	font-size : x-large;
+}
+
+.Popup.View h4 {
+	font-size : large;
+}
+
+
+.tabContainer .nav {
+    border-bottom: solid thin #337ab7;
+}
+
+.tabContainer .nav-pills>li>a {
+	border-radius : 0px;
+	cursor : pointer;
+}
+
+.tabContainer .nav-pills>li+li {
+	margin : 0px;
+}
+
+.tabContainer .tab-content.hidden {
+	display:none;
+}
+
+/** jCore styles, adapted from bootstrap **/
+.jCore-Control {
+    padding: 4px 8px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.jCore-Control:focus {
+	border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.jCore-Control, .jCore-Label {
+	height: 30px;
+}
+
+.jCore-Label {
+	padding : 0px;
+	line-height:30px;
+}
+
+.jCore-Checkbox.disabled input[type=checkbox]
+.jCore-Control:disabled,
+.jCore-Control.disabled,
+.jCore-Checkbox.disabled > * {
+	cursor : not-allowed;
+}
+
+.jCore-Button-Image {
+    display : inline-block;
+    vertical-align : middle;
+    top : 0px;
+	margin-left : 4px
+}
+
+.jCore-List {
+    padding: 1px 0px 1px 6px;
+}
+
+.jCore-List-Content {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.jCore-Checkbox input[type=checkbox],
+.jCore-Checkbox label {
+	vertical-align : middle;
+	font-weight : normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	cursor : pointer;
+}
+
+.jCore-Checkbox.disabled input[type=checkbox],
+.jCore-Checkbox.disabled label {
+	cursor : not-allowed;
+}
